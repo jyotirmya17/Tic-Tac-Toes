@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup");
+    const playButton = document.getElementById("playButton");
+    const mainContent = document.getElementById("mainContent");
+
+    // Add click event to the button
+    playButton.addEventListener("click", () => {
+        // Hide the pop-up
+        popup.classList.add("hidden");
+
+        // Show the main content
+        mainContent.classList.remove("hidden");
+    });
+});
+
 let currentPlayer = 'X';
 let gameBoard = ['', '', '', '', '', '', '', '', ''];
 let gameActive = false;
